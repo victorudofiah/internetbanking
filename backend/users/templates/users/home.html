@@ -1,0 +1,12 @@
+<h1>Welcome to Internet Bank</h1>
+
+{% if user.is_authenticated %}
+  <p>Hello, {{ username }}!</p>
+  <p>Account Number: {{ account_number }}</p>
+  <p>Balance: ${{ balance }}</p>
+  <a href="{% url 'logout' %}">Logout</a>
+{% else %}
+  <p>You are not logged in.</p>
+  <a href="{% url 'login' %}">Login</a> |
+  <a href="{% url 'register' %}">Register</a>
+{% endif %}
