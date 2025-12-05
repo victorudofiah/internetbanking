@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === DARK PREMIUM FINTECH DESIGN SYSTEM === */
+
+:root {
+  --primary: #4f46e5;      /* Indigo */
+  --primary-light: #6366f1;
+  --accent: #0ea5e9;       /* Neon Blue */
+  --bg-dark: #0f172a;      /* Deep navy */
+  --card-dark: rgba(255,255,255,0.05);
+  --text-light: #e2e8f0;
+}
+
+/* Body & Background */
+body {
+  background: url("./assets/bg-bank.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-light);
+}
+
+/* Glassmorphism cards */
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-5 py-3 rounded-xl font-medium text-white;
+  background: var(--primary);
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+/* Fade in animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Input focus */
+.input-focus:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* CTA Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #4f46e5, #0ea5e9);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 234, 255, 0.4);
+}
+
+/* Drop shadow for headings */
+.drop-shadow-lg {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Input Focus */
+.input-focus:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);
+}
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(90deg, #4f46e5, #0ea5e9);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 234, 255, 0.4);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
